@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游書珣〈穿過葉尖的名字〉​</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet"> -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            padding: 100px 0;
+            background: linear-gradient(20deg, pink, #1aa2a0) 
+            fixed center center / 100% 100%;
+            /* 上下 左右 */
+        }
+        .wrap{
+            width: 1200px;
+            margin: auto;
+        }
+        .item{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 70px;
+            font-family: 'Noto Sans TC', sans-serif;
+            /* background-color: #ccc; */
+        }
+        .item > .pic{
+            width: 55%;
+            flex-shrink: 0;
+        }
+        .item > .pic > img{
+            width: 100%;
+            vertical-align: middle;
+        }
+        .item > .txt{
+            width: 55%;
+            /* background-color: #fa8; */
+            flex-shrink: 0;
+            padding: 50px 30px;
+            box-sizing: border-box;
+            position: relative;
+            z-index: 1;
+        }
+        .item > :first-child{
+            margin-right: -10%;
+        }
+        .item:nth-child(1) > .txt{
+            background-color: rgb(240, 174, 193, .7);
+        }
+        .item:nth-child(2) > .txt{
+            background-color: rgb(42, 253, 208, .8);
+        }
+        .item:nth-child(3) > .txt{
+            background-color: rgb(254, 201, 121, .7);
+        }
+        .item:nth-child(4) > .txt{
+            background-color: rgb(149, 223, 214, .8);
+        }
+        .item > .txt > h2{
+            font-size: 40px;
+            font-weight: 900;
+        }
+        .item > .txt > p{
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <!-- item1 -->
+        <div class="item">
+            <div class="pic">
+                <img src="https://source.unsplash.com/600x350?1" alt="">
+            </div>
+            <div class="txt">
+                <h2>Paragraph 1</h2>
+                <p>散步時我想著你，此刻安睡於​
+                    我隆起的腹部，一個空著的括弧​
+                    等我填入全新的名字​
+                    它不該過分誇耀，只要​
+                    平凡而輕巧，加上恰好的強悍​
+                    像蔓生腳邊，綿延成片的野生小草​
+                    晚霞將它們烤出曠野的香味​</p>
+            </div>
+        </div>
+        <!-- item2 -->
+        <div class="item">
+            <div class="txt">
+                <h2>Paragraph 2</h2>
+                <p>我蹲下細看，細數千萬色階​
+                    哪一種綠更像你，適宜寫入你的名？​
+                    青色的毛蟲摩挲著尖刺葉緣​
+                    一隻蚱蜢在葉脈上跳格子​
+                    讓葉片晃出墨綠陰影，透露藏於​
+                    葉片背面，即將降臨的夜色​</p>
+            </div>
+            <div class="pic">
+                <img src="https://source.unsplash.com/600x350?2" alt="">
+            </div>
+        </div>
+        <!-- item3 -->
+        <div class="item">
+            <div class="pic">
+                <img src="https://source.unsplash.com/600x350?3" alt="">
+            </div>
+            <div class="txt">
+                <h2>Paragraph 3</h2>
+                <p>是什麼從眼角匆匆掠過？​
+                    輕踩禾本的花穗，隨即又被​
+                    凌空的蒲公英截走，是在葉上​
+                    逐一簽名又遠離的風，還是從我嘴邊碎落的​
+                    呼息韻腳？我翻閱手邊的野草圖集​
+                    語音一節一節，讀出陌生的名字​</p>
+            </div>
+        </div>
+        <!-- item4 -->
+        <div class="item">
+            <div class="txt">
+                <h2>Paragraph 4</h2>
+                <p>直到我們相遇，你將怯怯地張開眼耳​
+                    用它們來拆開「世界」這份大禮​
+                    裡頭有你獨一無二的名字，當我喚你​
+                    回到野草茂生的這裡，學我蹲下​
+                    但你蹲得更低，發現葉片上有些​
+                    只有你看得見的精靈；他們的模樣像你​
+                    在空氣裡畫寫自己的名字​
+                    你的語言終將緩緩成形，唸出他們​
+                    遺留於葉尖的第一個字​</p>
+            </div>
+            <div class="pic">
+                <img src="https://source.unsplash.com/600x350?4" alt="">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
