@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300,400,500,700,900&display=swap");
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        body{
+            background-color: #000;
+        }
+        .main-footer{
+            width: 100%;
+            padding: 150px 0 0 0;
+            background: linear-gradient(-20deg, #3f5494, #08c7a5);
+        }
+        .main-footer > .container{
+            display: flex;
+            width: 1200px;
+            margin: auto;
+        }
+        .footer-item{
+            width: 0;
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .footer-item > nav > a:hover{
+            color: #fa0;
+        }
+        .footer-item > h4{
+            font-size: 24px;
+            color: #fff;
+            border-bottom: 1px dotted #fff;
+            margin-bottom: 0.5em;
+            padding-bottom: 0.5em;
+        }
+        .footer-item > nav{
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-item > nav > a{
+            color: #fff;
+            line-height: 1.4em;
+            text-decoration: none;
+            padding: 5px 0;
+        }
+        .footer-item{
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-subs > form{
+            display: flex;
+            width: 100%;
+            margin: auto 0px;
+        }
+        .footer-subs > input[type="text"],
+        .footer-subs > input[type="submit"]{
+            border: none;
+            padding: 5px 10px;
+        }
+        .footer-subs > input[type="text"]{
+            width: 0;
+            flex-grow: 1;
+        }
+        .footer-subs > input[type="submit"]{
+            color: #70f6df;
+            background-color: #3e5293;
+        }
+        .copyright{
+            width: 100%;
+            text-align: center;
+            margin: 150px 0 0;
+            padding: 10px 0px;
+            background-color: #3e5293;
+            color: #70f6df;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main-footer">
+        <div class="container">
+            <div class="footer-item">
+                <h4>About</h4>
+                <nav>
+                    <a href="#">Non Sense 1</a>
+                    <a href="#">Non Sense 2</a>
+                    <a href="#">Non Sense 3</a>
+                </nav>
+            </div>
+            <div class="footer-item">
+                <h4>Info List</h4>
+                <nav>
+                    <a href="#">Non Sense 4</a>
+                    <a href="#">Non Sense 5</a>
+                    <a href="#">Non Sense 6</a>
+                    <a href="#">Non Sense 7</a>
+                </nav>
+            </div>
+            <div class="footer-item">
+                <h4>Service</h4>
+                <nav>
+                    <a href="#">Non Sense 8</a>
+                    <a href="#">Non Sense 9</a>
+                    <a href="#">Non Sense 10</a>
+                    <a href="#">Non Sense 11</a>
+                </nav>
+            </div>
+            <div class="footer-item footer-subs">
+                <h4>Subscribe</h4>
+                <form action="">
+                    <input type="text" name="">
+                    <input type="submit" value="訂閱">
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy; 2020
+            切版練習用文字
+        </div>
+    </div>
+
+</body>
+</html>
