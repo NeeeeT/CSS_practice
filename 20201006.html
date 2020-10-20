@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新聞網站課程練習</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        .wrap{
+            width: 1200px;
+            display: flex;
+            flex-direction: row;
+
+            /* box-shadow: 0 10px 30px rgba(160, 0, 0, .5) */
+        }
+        .box{
+            width: 340px;
+            background-color: #e76f51;
+
+            box-shadow: 0 10px 30px #f4a261;
+            /* float: left; */
+        }
+        .box img{
+            width: 80%;
+            height: 80%;
+            margin: 30px 30px 0px 30px;
+            box-shadow: 0 10px 30px #e9c46a;
+            border-radius: 30px;
+            opacity: 1;
+
+
+            transition: .4s;
+        }
+        .box:hover img{
+            opacity: 0.3;
+        }
+        .box p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+            <img src="https://source.unsplash.com/400x400?1" alt="">
+            <p>測試用文字區塊</p>
+        </div>
+        <div class="box">
+            <img src="https://source.unsplash.com/400x400?2" alt="">
+            <p>測試用文字區塊</p>
+        </div>
+        <div class="box">
+            <img src="https://source.unsplash.com/400x400?3" alt="">
+            <p>測試用文字區塊</p>
+        </div>
+    </div>
+</body>
+</html>

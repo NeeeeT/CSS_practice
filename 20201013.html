@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新聞網站課程練習</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap");
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .box{
+            width: 1023px;
+            height: 683px;
+
+            position: relative;
+
+            background-image: url("https://nickhsine.github.io/teach-at-nccu/assets/images/image-1.jpg");
+            background-position: left;
+            background-size: 1023px 683px;
+            
+            border: 25px dotted peru    ;
+        }
+        .box::before{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+
+            content: '山，在這裡──紙上攻頂14座8千公尺高山';
+            width: 560px;
+            font-size: 60px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class='box'></div>
+</body>
+</html>
