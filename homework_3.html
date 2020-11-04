@@ -5,14 +5,27 @@
     <meta charset="UTF-8">
     <title>HOMEWORK 3</title>
     <link rel="stylesheet" href="./css/h3.css">
+    <script src="./js/h3.js"></script>
 </head>
 <body>
     <div class="app">
+        <div class="hamburger-box">
+            <div class="hambox" style="height: 0px;visibility: hidden;"><p>評論</p></div>
+            <div class="hambox" style="height: 0px;visibility: hidden;"><div class='img-box'><img src="./images/member-icon.svg" alt="FILE NOT FOUND!"><p>登入</p></div></div>
+            <div class="hambox" style="height: 0px;visibility: hidden;"><p>專題</p></div>
+            <div class="hambox" style="height: 0px;visibility: hidden;"><div class='img-box'><img src="./images/search-icon.svg" alt="FILE NOT FOUND!"><p>搜尋</p></div></div>
+            <div class="hambox" style="height: 0px;visibility: hidden;"><p>攝影</p></div>
+            <div class="hambox" style="height: 0px;visibility: hidden;"><div class='img-box'><img src="./images/bookmark-list-icon.svg" alt="FILE NOT FOUND!"><p>書籤</p></div></div>
+            <div class="hambox" style="height: 0px;visibility: hidden;"><p>多媒體</p></div>
+            <div class="hambox" style="height: 0px;visibility: hidden;"><div class='img-box'><img src="./images/donate-icon.svg" alt="FILE NOT FOUND!"><p>贊助</p></div></div>
+            <div class="hambox" style="height: 0px;visibility: hidden;"><p>議題</p></div>
+            <div class="hambox" style="height: 0px;visibility: hidden;"><div class='img-box'><img src="./images/subscribe-icon.svg" alt="FILE NOT FOUND!"><p>訂閱</p></div></div>
+        </div>
         <div class="header-img">
             <div class="header-img1">
-                <img src="./images/twreporter-logo.png" alt="FILE NOT FOUND!"></img>
+                <a href='https://www.twreporter.org'><img src="./images/twreporter-logo.png" alt="FILE NOT FOUND!"></img></a>
             </div>
-            <div class="header-img2">
+            <div class="header-img2" id="header-img2">
                 <img src="./images/hamburger.png" alt="FILE NOT FOUND!">
             </div>
         </div>
@@ -65,9 +78,9 @@
             <blockquote>做為人，不知為何，我們傾向記憶美好，卻遺忘過程的苦痛。但我卻想，這是否讓我們理解、記憶一件事情性質的方式，也隨之產生偏誤？</blockquote>
         </div>
         <div class="box7 content-txt">
-            <blockquote>我想說的是，登山是件會死人的運動。</blockquote>
+            <blockquote>我想說的是，登山是件會死人的運動。<div class="graphic" id='graphic'><div class="circle"></div><div class="traingle" id='t'></div></div></blockquote>
         </div>
-        <div class="box8 content-txt">
+        <div class="box8 content-txt" id='box8' style="visibility:hidden;width:100%;height:0px;background-color:#FFFFFF;transition:0.8s;">
             <div class="txt">
                 <blockquote>某程度上，登上山巔之途，就是在死亡的陰影之下，動用自身全部的感官與技藝，設法避開那些遭致危機的陷阱。這樣的經驗本身，就是一種回報，高處的風景與抵達最高點的滿足，則是額外的嘉獎。</blockquote>
             </div>
@@ -79,7 +92,7 @@
             <blockquote>慢慢踱進餐廳帳，吃完千篇一律的鬆餅加煎蛋，正想放個音樂泡杯咖啡，這時外面有人叫我。是Lakpa。</blockquote>
         </div>
         <div class="box11 content-txt">
-            <blockquote>Lakpa是隔壁營區的商業團"Pioneer Adventure"的老闆，今年除了我跟阿果，馬卡魯峰這裡還有同樣來自台灣的登山者三條魚，她就在這個隊伍中。</blockquote>
+            <blockquote>Lakpa是隔壁營區的商業團"Pioneer Adventure"的老闆，今年除了我跟阿果，馬卡魯峰這裡還有同樣來自台灣的登山者<a href="https://zh.wikipedia.org/wiki/詹喬愉">三條魚</a><p>，她就在這個隊伍中。<p></blockquote>
         </div>
         <div class="box12 content-txt">
             <blockquote>原本以為Lakpa是來約我們晚上去他們隊上吃個飯之類的，興高采烈的走出去跟他打招呼，沒想到他表情挺嚴肅：</blockquote>

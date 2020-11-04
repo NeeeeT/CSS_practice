@@ -9,6 +9,7 @@
 }
 html, body{
     width: 375px;
+    height: auto;
     background-color: #E5E5E5;
     margin: auto;
 }
@@ -36,7 +37,7 @@ html, body{
     cursor: pointer;
 }
 .header-img1:hover, .header-img2:hover{
-    opacity: 0.3;
+    opacity: 0.7;
     transition: 0.35s;
 }
 .body-img{
@@ -45,6 +46,49 @@ html, body{
 .body-img:hover{
     opacity: 0.8;
     transition: 0.3s;
+}
+.hamburger-box > .hambox{
+    transition: .4s;
+    width: 50%;
+    float: left;
+    font-family: 'Noto Sans TC';
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 0.5px solid rgb(216, 215, 215);
+    border-top: 0.5px solid rgb(216, 215, 215);
+    cursor: pointer;
+}
+.hamburger-box > .hambox:hover{
+    opacity: 0.8;
+    background-color: #cdcacf;
+}
+.hamburger-box > .hambox:nth-child(2n+1) > p{
+    text-align: center;
+    margin-top: 30px;
+}
+.hamburger-box > .hambox img{
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+}
+.hamburger-box > .hambox:nth-child(2n+1){
+    border-right: 0.5px solid rgb(216, 215, 215);
+}
+.hamburger-box > .hambox:nth-child(2n){
+    border-left: 0.5px solid rgb(216, 215, 215);
+}
+.img-box{
+    margin-top: 25px;
+    margin-left: 55px;
+}
+.img-box img{
+    float: left;
+}
+.img-box p{
+    float: left;
+    margin-left: 20px;
+    margin-top: 5px;
+    transition: .1s;
 }
 .box1{
     width: 100%;
@@ -171,7 +215,7 @@ html, body{
     cursor: pointer;
 }
 .box4 > .inner-box7 > img:hover{
-    width: 25%;
+    width: 30%;
     transition: 0.35s;
 }
 .box5{
@@ -213,10 +257,26 @@ html, body{
     line-height: 40px;
     color: #404040;
 }
-.box8{
-    width: 100%;
-    height: 316px;
+.graphic{
+    display: inline-block;
+}
+.graphic:hover{
+    cursor: pointer;
+}
+.circle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     background-color: #FFFFFF;
+}
+.traingle{
+    display: inline-block;
+    border-left: 4.5px solid transparent;
+    border-right: 4.5px solid transparent;
+    border-top: 7.5px solid #D0A67D;
+    margin-left: -14.5px;
+    margin-bottom: 5px;
 }
 .box8 > .txt{
     margin: 14px 37px 0px 38px;
@@ -225,9 +285,7 @@ html, body{
     padding-top: 17px;
     width: 300px;
     height: 280px;
-
     letter-spacing: 1px;
-
     font-size: 20px;
     line-height: 40px;
     color: #404040;
@@ -269,6 +327,14 @@ html, body{
     font-size: 20px;
     line-height: 40px;
     color: #404040;
+}
+.box11 a{
+    color: #A67A44;
+    text-decoration: none;
+    border-bottom: 1px solid #A67A44;
+}
+.box11 p{
+    display: inline-block;
 }
 .box12{
     margin: 40px 37px 0 38px;
