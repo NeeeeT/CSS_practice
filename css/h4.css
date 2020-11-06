@@ -36,14 +36,14 @@ html, body{
     padding: 22px 20px 18px 0px;
     cursor: pointer;
 }
-.header-img1:hover, .header-img2:hover{
+.header-img1:hover, .header-img1:active, .header-img2:hover, .header-img2:active{
     opacity: 0.7;
     transition: 0.35s;
 }
 .body-img{
     width: 100%;
 }
-.body-img:hover{
+.body-img:hover, .body-img:active{
     opacity: 0.8;
     transition: 0.3s;
 }
@@ -58,7 +58,7 @@ html, body{
     border-top: 0.5px solid rgb(216, 215, 215);
     cursor: pointer;
 }
-.hamburger-box > .hambox:hover{
+.hamburger-box > .hambox:hover, .hambox:active{
     opacity: 0.8;
     background-color: #cdcacf;
 }
@@ -443,7 +443,7 @@ html, body{
     transform: scale(0.95);
     /* padding-right: 20px; */
 }
-.txtNbox blockquote:hover{
+.txtNbox blockquote:hover, .txtNbox blockquote:active{
     text-decoration: underline;
     transition: .5s;
 }

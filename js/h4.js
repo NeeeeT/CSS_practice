@@ -21,25 +21,24 @@ window.onload = ()=>{
         }
     })
     plotSine();
-    function plotSine() {
+
+    function plotSine(){
         var ctx = canvas.getContext('2d');
         var width = ctx.canvas.width;
         var height = ctx.canvas.height;
-        // var scale = 20;
-    
         ctx.beginPath();
         ctx.lineWidth = 1;
         ctx.strokeStyle = "#FABCF0";
         
         var x = 0;
         var y = 0;
-        var amplitude = 5.5;
-        var frequency = 2;
-        //ctx.moveTo(x, y);
+        var amplitude = 35;
+        var frequency = 15;
+        
         while (x < width) {
-            y = height/2 + amplitude * Math.sin(x/frequency);
+            y = height/2 + amplitude * (Math.sin((2*(x-15)) / frequency ) * 1 / 7);
             ctx.lineTo(x, y);
-            x = x + 10.2;
+            x = x + 1;
         }
         ctx.stroke();
     }
