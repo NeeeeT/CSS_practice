@@ -18,6 +18,7 @@ window.onload = ()=>{
             let cond = (hBox[i].style.visibility == 'hidden');
             hBox[i].style.visibility = cond ? 'visible' : 'hidden';
             hBox[i].style.height = cond ? '100px' : '0px';
+            hBox[i].style.opacity = cond ? 1:0;
         }
     })
     plotSine();
