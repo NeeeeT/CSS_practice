@@ -214,8 +214,8 @@ html, body{
     width: 14.28%;
     cursor: pointer;
 }
-.box4 > .inner-box7 > img:hover{
-    width: 30%;
+.box4 > .inner-box7 > img:hover, img:active{
+    transform: scale(2);
     transition: 0.35s;
 }
 .box5{
