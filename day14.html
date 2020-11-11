@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DAY 14 (DAY 13 - 進階)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300,400,500,700,900&display=swap");
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        html, body{
+            height: 100%;
+        }
+        body{
+            background-color: #546377;
+        }
+        #side-menu-switch:checked + .side-menu{
+            transform: translate(0);
+        }
+        #side-menu-switch{
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+        #side-menu-switch:checked + .side-menu label .fa{
+            /* transform: scaleX(-1); */
+            transform: rotate(180deg);
+        }
+        .side-menu{
+            position: relative;
+
+            width: 300px;
+            height: 100%;
+            padding: 50px 0px;
+            background-image: linear-gradient(0deg, #efefef, #282828);
+
+            display: flex;
+            flex-direction: column;
+            box-shadow: 10px 0px 10px #aaa;
+            transform: translateX(-100%);
+            transition: .5s;
+        }
+        .side-menu form{
+            display: flex;
+            margin: 0 10px;
+        }
+        .side-menu form input{
+            border: none;
+            padding: 5px 10px;
+            width: 230px;
+        }
+        .side-menu form button{
+            border: none;
+            padding: 5px 10px;
+            width: 50px;
+            background-color: royalblue;
+        }
+        nav a:hover .fa{
+            transform: scale(2);
+            transition: .3s;
+        }
+        nav a{
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+
+            position: relative;
+        }
+        nav a + a::before{
+            content: '';
+            position: absolute;
+            border-top: 1px solid #fff;
+
+            left: 10px;
+            right: 10px;
+            top: 0px;
+        }
+        .side-menu label{
+            position: absolute;
+            width: 40px;
+            height: 80px;
+            background-color: #000;
+            color: #fff;
+            line-height: 80px;
+            text-align: center;
+
+            top: 0;
+            right: -40px;
+            bottom: 0;
+            margin: auto;
+            font-size: 30px;
+            border-radius: 0 10px 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" name="" id="side-menu-switch">
+    <div class="side-menu">
+        <form>
+            <input type="search" name="" id="">
+            <button></button>
+        </form>
+        <nav>
+            <a href=""><i class="fa fa-user-circle" aria-hidden="true"></i>LINK 1</a>
+            <a href=""><i class="fa fa-battery-quarter" aria-hidden="true"></i>LINK 2</a>
+            <a href=""><i class="fa fa-bug" aria-hidden="true"></i></i>LINK 3</a>
+            <a href=""><i class="fa fa-battery-quarter" aria-hidden="true"></i>LINK 4</a>
+            <a href=""><i class="fa fa-bug" aria-hidden="true"></i>LINK 5</a>
+        </nav>
+        <label for="side-menu-switch">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </label>
+    </div>
+</body>
+
+</html>
