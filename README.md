@@ -6,4 +6,4 @@
 1. Youtube: CSSCoke 網頁切版教學
 https://www.youtube.com/playlist?list=PLqivELodHt3hxeuLX8PYaI8u1GcDaBoJo
 
-2. 報導者網頁工程師 李法賢 於 2020年(109上學期) 政大新聞系授課
+2. 前報導者網頁工程師 李法賢 於 2020年(109上學期) 政大新聞系授課
