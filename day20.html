@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style lang="css">
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    body, html{
+        width: 100%;
+    }
+    ul{
+        width: 960px;
+        margin: auto;
+        padding: 100px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        text-align: center;
+        line-height: 200px;
+        /* outline: 1px solid #f00; */
+        margin: 0 60px -40px;
+        font-size: 30px;
+    }
+    li::before{
+        content: "";
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        outline: 1px solid blue;
+        transform: rotate(45deg);
+    }
+    li:nth-child(n+4){
+        left: 160px;
+    }
+    li:nth-child(n+7){
+        left: 0;
+    }
+    .box1{
+    }
+</style>
+<body>
+    <ul>
+        <li class="box1">1</li>
+        <li class="box2">2</li>
+        <li class="box3">3</li>
+        <li class="box4">4</li>
+        <li class="box5">5</li>
+        <li class="box6">6</li>
+        <li class="box7">7</li>
+        <li class="box8">8</li>
+        <li class="box9">9</li>
+    </ul>
+</body>
+</html>
