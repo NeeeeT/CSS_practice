@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021 11 07</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+            background-color: #F2F2F2;
+        }
+        .wrapper{
+            width: 100%;
+            /* height: 100%; */
+            padding: 80px 80px;
+        }
+        .section{
+            display: block;
+            width: 100%;
+            min-height: 100vh;
+            /* device height */
+            height: 100%;
+            background-color: #FFFFFF;
+            margin: 40px 0;
+        }
+        .section:first-child{
+            /* section 第一個物件: s1 */
+            /* margin: 上 右 下 左 */
+
+            margin-top: 0;
+            /* margin-right: 0; */
+            /* margin-bottom: 0; */
+            /* margin-left: 0; */
+        }
+        .s1, .s2{
+            padding: 120px 80px;
+            outline: 1px solid #000;
+            display: flex;
+            /* flex 排列，對底下的內容物做的 */
+            flex-wrap: wrap;
+            /* 寬度不夠時換行 */
+            justify-content: space-between;
+            /* 水平排列方式 */
+        }
+        .s1 h1, .s2 h1{
+            /* 先抓s1 再抓底下的h1 */
+            font-size: 48px;
+            line-height: 72px;
+            margin-bottom: 60px;
+        }
+        .s1 .text-box, .s2 .text-box{
+            flex-basis: 50%;
+            /* flex 寬度 50% */
+
+            padding-right: 40px;
+            /* 向內右推40px */
+
+            /* max-width: 540px; */
+            /* 最大寬度 */
+        }
+        .s1 .text-box h3, .s2 .text-box h3{
+            font-size: 24px;
+        }
+        .s1 .text-box p, .s2 .text-box p{
+            margin-top: 24px;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .s2 .text-box .btn{
+            width: 130px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid #18A0FB;
+            color: #18A0FB;
+            display: flex;
+            /* 下層作排列 */
+            justify-content: center;
+            /* 水平 */
+            align-items: center;
+            /* 垂直 */
+            margin: 40px 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="section s1">
+            <h1>Snap photos and share like never before</h1>
+            <div class='text-box'>
+                <h3>Sed ut perspiciatis</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+            </div>
+            <div class='text-box'>
+                <h3>Sed ut perspiciatis</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+            </div>
+            <div class='text-box'>
+                <h3>Sed ut perspiciatis</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+            </div>
+            <div class='text-box'>
+                <h3>Sed ut perspiciatis</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+            </div>
+        </section>
+        <section class="section s2">
+            <h1>Snap photos and share like never before</h1>
+            <div class='text-box'>
+                <h3>Sed ut perspiciatis</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                <div class='btn'>Learn more</div>
+            </div>
+            <div class='text-box'>
+                <h3>Sed ut perspiciatis</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                <div class='btn'>Learn more</div>
+            </div>
+            <div class='text-box'>
+                <h3>Sed ut perspiciatis</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                <div class='btn'>Learn more</div>
+            </div>
+            <div class='text-box'>
+                <h3>Sed ut perspiciatis</h3>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+                <div class='btn'>Learn more</div>
+            </div>
+        </section>
+        <section class="section s3"></section>
+        <section class="section s4"></section>
+        <section class="section s5"></section>
+    </div>
+</body>
+</html>
